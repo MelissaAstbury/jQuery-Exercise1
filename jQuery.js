@@ -13,7 +13,7 @@ $("img:first-of-type").attr("src", "https://cdn.images.express.co.uk/img/dynamic
 // $("input").attr("type", "checkbox");
 
 //using 'val'
-$("input").val("melissa");
+//$("input").val("melissa");
 
 //Know which 'option' the user has selected?
 $("selected").val();
@@ -27,3 +27,44 @@ $("li").addClass("correct");
 //toggle class
 $("li").toggleClass("correct");
 $("li").first().toggleClass("done");
+
+//EVENT METHODS
+//Click
+
+$("h1").last().click(function () {
+    alert("last h1 clicked!");
+})
+
+$("button").click(function () {
+    $(this).css("background-color", "blue");
+})
+
+//keypress
+
+$("input").keyup(function (event) {
+    console.log(event);
+    if (event.target.value === "melissa") {
+        alert('Hi Melissa');
+    }
+
+    if (event.which === 13) {
+        alert("you hit enter!");
+    }
+})
+
+//on
+$("h1").on("click", function () {
+    $(this).css("color", "purple");
+})
+
+$("input").on("keypress", function () {
+    console.log("Key Pressed!");
+})
+
+$("button").on("mouseenter", function () {
+    $(this).css("font-weight", "bold");
+})
+
+$("button").on("mouseleave", function () {
+    $(this).css("font-weight", "normal");
+})
