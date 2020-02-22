@@ -10,4 +10,9 @@ $("img").css("width", "200px");
 $("img:first-of-type").attr("src", "https://cdn.images.express.co.uk/img/dynamic/109/590x/974020_1.jpg?r=1533722212472");
 
 //changing the text input box to a checkbox using 'attr'
-$("input").attr("type", "checkbox");
+// $("input").attr("type", "checkbox");
+
+$("input").val("melissa");
+
+//Know which 'option' the user has selected?
+$("selected").val();
