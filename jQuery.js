@@ -68,3 +68,19 @@ $("button").on("mouseenter", function () {
 $("button").on("mouseleave", function () {
     $(this).css("font-weight", "normal");
 })
+
+//Effects
+//Fade
+
+// $("button").last().on("click", function () {
+//     $("div").fadeOut(2000, function () {
+//         console.log("Fade Completed!");
+//         $(this).remove();
+//     });
+// })
+
+//SlideUp
+
+$("button").last().on("click", function () {
+    $("div").slideUp();
+})
