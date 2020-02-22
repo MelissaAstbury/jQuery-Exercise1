@@ -39,6 +39,7 @@ $("button").click(function () {
     $(this).css("background-color", "blue");
 })
 
+
 //keypress
 
 $("input").keyup(function (event) {
@@ -83,4 +84,8 @@ $("button").on("mouseleave", function () {
 
 $("button").last().on("click", function () {
     $("div").slideUp();
+})
+
+$("button").last().on("click", function () {
+    $(this).fadeOut();
 })
