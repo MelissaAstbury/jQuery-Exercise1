@@ -12,7 +12,18 @@ $("img:first-of-type").attr("src", "https://cdn.images.express.co.uk/img/dynamic
 //changing the text input box to a checkbox using 'attr'
 // $("input").attr("type", "checkbox");
 
+//using 'val'
 $("input").val("melissa");
 
 //Know which 'option' the user has selected?
 $("selected").val();
+
+//adding classes
+$("h1").addClass("correct");
+$("h1").removeClass("correct");
+//$("li").addClass("wrong");
+$("li").addClass("correct");
+
+//toggle class
+$("li").toggleClass("correct");
+$("li").first().toggleClass("done");
